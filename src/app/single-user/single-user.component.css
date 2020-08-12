@@ -1,0 +1,15 @@
+.container {
+    flex-direction: column;
+}
+
+.user-container-items {
+    width: 300px;
+    border: 1px solid #E9E9E9;
+    border-radius: 6px;
+    padding: 30px;
+}
+
+h2, h4, p {
+    padding: 4px;
+    font-weight: normal;
+}

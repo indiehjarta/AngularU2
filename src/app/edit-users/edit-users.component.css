@@ -1,0 +1,15 @@
+.btn-add {
+    background-color: #2DB141;
+}
+
+.btn-add:hover {
+    background-color: #1C7730;
+}
+
+.btn-remove {
+    background-color: #C71C3C;
+}
+
+.btn-remove:hover {
+    background-color: #BF1E2C;
+}

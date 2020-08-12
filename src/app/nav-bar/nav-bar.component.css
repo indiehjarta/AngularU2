@@ -1,0 +1,18 @@
+nav {
+    background-color: #2E4053;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: #A8D7E3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.active {
+    color: #FFF;
+}

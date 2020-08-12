@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="container-items">
+        <div *ngIf="!checkIfLoggedIn()">
+            <form (ngSubmit)="login()" #userForm="ngForm">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" 
+                required email
+                autocomplete="off"
+                [(ngModel)]="model.email"
+                #email="ngModel">
+
+                <div [hidden]="email.valid || email.untouched"
+                    class="alert-box">
+                    Incorrect email
+                </div>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" 
+                required password
+                [(ngModel)]="model.password"
+                #password="ngModel"
+                (minlength)="10">
+
+                <div [hidden]="password.valid || password.untouched"
+                    class="alert-box">
+                    Incorrect password
+                </div>
+
+                <button class="btn-login" type="submit" [disabled]="!userForm.valid">Login</button>
+                <button class="btn-create">Create a new user</button>
+            </form>
+        </div>
+        <div *ngIf="checkIfLoggedIn()">
+            <p>You are already logged in</p>
+            <button class="btn-logout" (click)="logout()">Logout</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="container" *ngIf="!checkIfLoggedIn()">
+    <h4>Please log in to see this content</h4>
+</div>
+
+<div class="container" *ngIf="checkIfLoggedIn()">
+    <!-- With Input and Output is it able to send and receive data from or to childs-->
+    <app-users-list [users]="userList"></app-users-list>
+    <app-edit-users (addUser)="addUser($event)" (removeUser)="removeUser()"></app-edit-users>
+</div>

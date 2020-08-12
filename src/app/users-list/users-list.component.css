@@ -1,0 +1,15 @@
+ul {
+    width: 100%;
+    border-radius: 6px;
+    border-style: none;
+    margin: 0;
+}
+
+.btn-toggle {
+    background-color: #20A5AC;
+    width: 100%;
+}
+
+.btn-toggle:hover {
+    background-color: #127383;
+}

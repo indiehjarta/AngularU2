@@ -1,0 +1,47 @@
+.container-items {
+    width: 400px;
+}
+
+input {
+    margin: 20px 0;
+    width: 92.5%;
+}
+
+.alert-box {
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    color: #A94442;
+    background-color: #F2DEDE;
+    border-color: #EBCCD1;
+    border-radius: 4px;
+}
+
+.ng-invalid:not(Form).ng-touched {
+    border: 3px solid #A94442;
+}
+
+button:disabled {
+    background-color: #75C180;
+}
+
+p {
+    margin: 16px 0;
+}
+
+.btn-login, .btn-logout {
+    background-color: #2DB141;
+}
+
+.btn-login:hover, .btn-logout:hover {
+    background-color: #1C7730;
+}
+
+.btn-create {
+    background-color: #5FA1FF;
+}
+
+.btn-create:hover {
+    background-color: #015FD5;
+}

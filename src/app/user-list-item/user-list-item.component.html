@@ -1,0 +1,10 @@
+<!-- ngClass allows to dynamically set CSS depends on true/false -->
+<!-- Each user -->
+<!-- -->
+
+<li [ngClass]="textColor ? 'redColor' : 'greenColor'"
+    [routerLink]="['/user', user.id]">
+    <a>
+        {{ user.name }} 
+    </a>
+</li>

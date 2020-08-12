@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="user-container-items" *ngIf="user">
+        <h2 style="font-size:25px;">{{ user.username }}</h2>
+        <h4 style="color:#6B6B6B;padding-bottom:20px;">{{ user.name }}</h4>
+        <p>Street: {{ user.address.street }}</p>
+        <p>Zipcode: {{ user.address.zipcode }}</p>
+        <p>City: {{ user.address.city }}</p>
+    </div>
+    <button class="btn-back" [routerLink]="['/dashboard']"><span>Go back</span></button>
+</div>

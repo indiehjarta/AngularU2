@@ -1,0 +1,15 @@
+<!-- Looping the array with ngFor -->
+<!-- [user] - Splits the array and picks out each user -->
+<!-- [textColor] - Binds event to user-list-item -->
+
+<div class="container-items">
+    <ul>
+        <app-user-list-item 
+            *ngFor="let user of users" 
+            [user]="user" 
+            [textColor]="textColor">
+        </app-user-list-item>
+    </ul>
+
+    <button class="btn-toggle" (click)="onClickToggle()">Toggle Colors</button>
+</div>

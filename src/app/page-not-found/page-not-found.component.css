@@ -1,0 +1,14 @@
+.container {
+    flex-direction: column;
+}
+
+h2, h4 {
+    font-size: 3em;
+    color: #5FA1FF;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 20px;
+    padding-bottom: 4px;
+}

@@ -1,1 +1,93 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-items {
+    width: 300px;
+    margin: 25px;
+    padding: 25px;
+    background-color: #EAEEF0;
+    border-radius: 6px;
+}
+
+button {
+    cursor: pointer;
+    color: #FFF;
+    border-radius: 6px;
+    border: none;
+    margin: 10px 10px 0 0;
+    padding: 15px;
+}
+
+/* THE "GO BACK-BUTTON"*/
+.btn-back {
+    background-color: #2E4053;
+    width: 200px;
+    margin-top: 40px;
+    transition: all 0.5s;
+}
+
+.btn-back span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn-back span:after {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -15px;
+    transition: 0.5s;
+}
+  
+.btn-back:hover span {
+    padding-left: 20px;
+}
+  
+.btn-back:hover span:after {
+    opacity: 1;
+    left: 0;
+}
+
+.btn-back:hover {
+    background-color: #081A2D;
+}
+/*--------------------------*/
+
+
+/* INPUTS CSS */
+input {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border-style: none;
+}
+
+input::placeholder {
+    color: #666;
+}
+
+input:focus {
+    border: 3px solid #8c97fd;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+/*--------------------------*/

@@ -1,0 +1,9 @@
+<div class="container-items">
+    <!-- Input with two-way binding -->
+    <!-- With keyup.enter, you can hit the Enter button who calls the function -->
+    <input type="text" [(ngModel)]="user" (keyup.enter)="onClickAdd()" placeholder="new user..">
+
+    <!-- Buttons calls the functions in .ts -->
+    <button class="btn-add" (click)="onClickAdd()">Add</button>
+    <button class="btn-remove" (click)="onClickRemove()">Remove</button>
+</div>
