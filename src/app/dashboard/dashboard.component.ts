@@ -1,3 +1,9 @@
+/**
+ * This DASHBOARD component:
+ * is the parent to EDIT-USERS and USERS-LIST.
+ * checks if you're logged in, you should see it's content.
+ */
+
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { UsersService } from '../users.service';

@@ -1,3 +1,8 @@
+/**
+ * This PAGE-NOT-FOUND component: 
+ * creates the UI if you enter a route that doesn't exist.
+ */
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({

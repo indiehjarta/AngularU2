@@ -1,3 +1,9 @@
+/**
+ * This USERS-LIST component: 
+ * creates a list of all users from the array in dashboard.
+ * sends boolean property to user-list.item which change the color of the users.
+ */
+
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({

@@ -1,3 +1,10 @@
+/**
+ *  This USER-LIST-ITEM component:
+ *  is a child to USERS-LIST.
+ *  receives a user with NgFor
+ *  receives and sets value for the input textColor
+ */
+
 import { Component, OnInit, Input } from '@angular/core';
 
 /**

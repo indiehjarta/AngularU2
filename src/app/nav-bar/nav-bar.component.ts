@@ -1,3 +1,8 @@
+/**
+ * This NAV-BAR component:
+ * creates the navbar and connects two routes, login and dashboard.
+ */
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({

@@ -1,3 +1,8 @@
+/**
+ * This EDIT-USERS component:
+ * let you add or remove users from the array in dashboard.
+ */
+
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
