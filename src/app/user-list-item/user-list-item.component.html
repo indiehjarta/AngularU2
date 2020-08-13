@@ -1,6 +1,6 @@
 <!-- ngClass allows to dynamically set CSS depends on true/false -->
-<!-- Each user -->
-<!-- -->
+<!-- ngFor looping through our users and shows each user object  -->
+<!-- routerLink sends user to single-user component -->
 
 <li [ngClass]="textColor ? 'redColor' : 'greenColor'"
     [routerLink]="['/user', user.id]">

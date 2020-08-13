@@ -1,3 +1,9 @@
+/**
+ * Service "cooperates" with the models and defines admins that existing.
+ * The localStorage properties allow to save key/value pairs in a web browser.
+ * Sets the key to "user" and it's value is that we send in.
+ */
+
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { AdminFull } from './models/admin-full.model';
@@ -25,9 +31,8 @@ export class AuthService {
 
   constructor(public router: Router) { }
 
-  /**
-   * 
-   */
+  // Checks if localStorage has user or not. 
+  // If localStorage has, you're logged in.
   checkIfLoggedIn(): boolean {
     if (localStorage.getItem('user')) {
       return true;
@@ -35,6 +40,8 @@ export class AuthService {
     return false;
   }
 
+  // Controls if login is an existing admin from the model and if it's email and password matches.
+  // Sets the localStorage for the user.
   public login(user: AdminLogin) {
     for (let i = 0; i < this.admins.length; i++) {
       if (user.email === this.admins[i].email && user.password === this.admins[i].password) {
@@ -44,7 +51,7 @@ export class AuthService {
     }
   }
 
-  //
+  // Logs out the user/admin by clears the localStorage and set loggedUser to undefined.
   public logout(): void {
     localStorage.clear();
     this.loggedUser = undefined;

@@ -91,3 +91,11 @@ input:focus::placeholder {
     color: transparent;
 }
 /*--------------------------*/
+
+
+/*------"Please log in to see this content"------*/
+h5 {
+    font-size: 3em;
+    color: #5FA1FF;
+}
+/*--------------------------*/

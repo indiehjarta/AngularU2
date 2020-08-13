@@ -1,4 +1,8 @@
-<div class="container">
+<div class="container" *ngIf="!checkIfLoggedIn()">
+    <h5>Please log in to see this content</h5>
+</div>
+
+<div class="container" *ngIf="checkIfLoggedIn()">
     <div class="user-container-items" *ngIf="user">
         <h2 style="font-size:25px;">{{ user.username }}</h2>
         <h4 style="color:#6B6B6B;padding-bottom:20px;">{{ user.name }}</h4>

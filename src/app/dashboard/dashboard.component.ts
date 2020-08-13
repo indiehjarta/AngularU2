@@ -9,7 +9,7 @@ import { UsersService } from '../users.service';
 })
 export class DashboardComponent implements OnInit {
 
-  // Array with the 'users' we send in.
+  // Array with the 'users' from JSON placeholder.
   userList: Object[] = [];
 
   constructor(private authService: AuthService, private usersService: UsersService) { }
@@ -18,10 +18,15 @@ export class DashboardComponent implements OnInit {
     this.getUsers();
   }
 
-  //
+  // Fetching users from UsersService and puts in the array.
   getUsers() {
     this.usersService.getUsers()
       .subscribe(users => this.userList = users);
+  }
+
+  //  Checks with AuthService if logged in or not.
+  checkIfLoggedIn() {
+    return this.authService.checkIfLoggedIn();
   }
 
   // Adds a new user in the array with Output from edit-users.
@@ -32,11 +37,6 @@ export class DashboardComponent implements OnInit {
   // Deletes an user from the array.
   removeUser() {
     this.userList.pop();
-  }
-
-  //
-  checkIfLoggedIn() {
-    return this.authService.checkIfLoggedIn();
   }
 
 }
