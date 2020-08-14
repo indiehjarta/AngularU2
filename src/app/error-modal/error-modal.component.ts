@@ -1,8 +1,8 @@
 /**
- * 
+ * Opens a modal who gives visual feedback for invalid fields.
  */
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-error-modal',
@@ -10,6 +10,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./error-modal.component.css']
 })
 export class ErrorModalComponent implements OnInit {
+
+  @Input() error: string;
 
   constructor() { }
 

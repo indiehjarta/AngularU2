@@ -26,13 +26,13 @@ import { ErrorModalComponent } from './error-modal/error-modal.component';
     LoginComponent,
     NavBarComponent,
     PageNotFoundComponent,
-    ErrorModalComponent
+    ErrorModalComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

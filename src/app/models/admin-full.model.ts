@@ -1,3 +1,7 @@
+/**
+ * Fake backend
+ */
+
 export class AdminFull {
 
     constructor(

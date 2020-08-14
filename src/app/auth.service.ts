@@ -16,6 +16,7 @@ export class AuthService {
 
   loggedUser: string;
 
+  // Fake backend
   public admins:AdminFull[] = [{
 
     firstName: 'John',
