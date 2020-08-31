@@ -3,7 +3,7 @@
         <div *ngIf="!checkIfLoggedIn()">
             <form (ngSubmit)="login()" #userForm="ngForm">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" 
+                <input class="form-control form-control-lg" type="email" id="email" name="email" 
                 required email
                 autocomplete="off"
                 [(ngModel)]="model.email"
@@ -15,7 +15,7 @@
                 </div>
 
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" 
+                <input class="form-control form-control-lg" type="password" id="password" name="password" 
                 required password
                 [(ngModel)]="model.password"
                 #password="ngModel"
